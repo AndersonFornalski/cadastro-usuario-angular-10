@@ -3,20 +3,20 @@
   <form>
     <div class="mb-3">
       <label class="form-label">Nome</label>
-      <input type="text" class="form-control" name="name" placeholder="digite seu nome">
+      <input type="text" [(ngModel)]="user.name" class="form-control" name="name" placeholder="digite seu nome">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Email</label>
-      <input type="email" class="form-control" name="email" placeholder="digite seu e-mail">
+      <input type="email" [(ngModel)]="user.email" class="form-control" name="email" placeholder="digite seu e-mail">
     </div>
 
     <div class="mb-3">
       <label class="form-label">Telefone</label>
-      <input type="text"  class="form-control" name="phone" placeholder="digite seu telefone">
+      <input type="text" [(ngModel)]="user.phone"  class="form-control" name="phone" placeholder="digite seu telefone">
     </div>
     
-    <button (click)="salvar()" type="submit" class="btn btn-primary">Cadastrar</button>
+    <button (click)="save()" type="submit" class="btn btn-primary">Cadastrar</button>
   </form>
 </div>
 
